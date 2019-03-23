@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewEditActivity">
+
+    <EditText
+        android:id="@+id/editpw12"
+        android:layout_width="242dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textpw" />
+
+    <Button
+        android:id="@+id/copybutton3"
+        android:layout_width="82dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="183dp"
+        android:text="Copy"
+        app:layout_constraintBottom_toTopOf="@+id/textid"
+        app:layout_constraintStart_toEndOf="@+id/editweb12" />
+
+    <Button
+        android:id="@+id/copybutton11"
+        android:layout_width="82dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="150dp"
+        android:text="Copy"
+        app:layout_constraintStart_toEndOf="@+id/edituser12"
+        app:layout_constraintTop_toBottomOf="@+id/deletebutton" />
+
+    <Button
+        android:id="@+id/randbutton21"
+        android:layout_width="60dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="76dp"
+        android:text="Ran"
+        app:layout_constraintStart_toEndOf="@+id/editpw12"
+        app:layout_constraintTop_toBottomOf="@+id/copybutton11" />
+
+    <Button
+        android:id="@+id/copybutton21"
+        android:layout_width="60dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="76dp"
+        android:text="@android:string/copy"
+        app:layout_constraintStart_toEndOf="@+id/randbutton21"
+        app:layout_constraintTop_toBottomOf="@+id/copybutton11" />
+
+    <Button
+        android:id="@+id/save1"
+        android:layout_width="212dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="492dp"
+        android:text="save"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textpw"
+        android:layout_width="74dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="196dp"
+        android:text="password:"
+        app:layout_constraintBottom_toTopOf="@+id/save1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textuser"
+        android:layout_width="74dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="152dp"
+        android:text="username:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edituser12"
+        android:layout_width="242dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="196dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textweb"
+        android:layout_width="74dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="84dp"
+        android:text="website:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textpw" />
+
+    <EditText
+        android:id="@+id/editweb12"
+        android:layout_width="242dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="36dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/save1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/deletebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="delete"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/textid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="96dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/save1" />
+
+</android.support.constraint.ConstraintLayout>
